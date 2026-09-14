@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faris 'Ayyasy Al Ghifari | Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            dark: '#090D16',
+                            light: '#1E293B',
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            dark: '#AA8C2C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold selection:text-white">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold tracking-tight text-navy flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-navy text-gold flex items-center justify-center font-bold text-sm shadow-md">FA</span>
+                <span>Faris Al Ghifari</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-600 hover:text-gold transition-colors">About</a>
+                <a href="#experience" class="text-slate-600 hover:text-gold transition-colors">Experience</a>
+                <a href="#projects" class="text-slate-600 hover:text-gold transition-colors">Projects & Orgs</a>
+                <a href="#skills" class="text-slate-600 hover:text-gold transition-colors">Skills</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-navy text-white hover:bg-gold hover:text-navy transition-all shadow-sm font-medium">Contact Me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 hover:text-navy focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#about" class="block py-2 text-slate-700 font-medium hover:text-gold">About</a>
+            <a href="#experience" class="block py-2 text-slate-700 font-medium hover:text-gold">Experience</a>
+            <a href="#projects" class="block py-2 text-slate-700 font-medium hover:text-gold">Projects & Orgs</a>
+            <a href="#skills" class="block py-2 text-slate-700 font-medium hover:text-gold">Skills</a>
+            <a href="#contact" class="block text-center py-3 rounded-lg bg-navy text-white font-medium hover:bg-gold hover:text-navy transition-all">Contact Me</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-100 via-white to-gold-light/20 overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-navy/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy/5 border border-navy/10 text-navy text-sm font-medium animate-pulse">
+                <i class="fa-solid fa-graduation-cap text-gold"></i>
+                <span>Fresh Graduate • Islamic Education Management (GPA 3.66)</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-navy leading-tight">
+                Muhammad Faris <br class="hidden sm:inline" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-dark via-gold to-gold-light">‘Ayyasy Al Ghifari</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-600 font-light leading-relaxed">
+                "Bridging administrative excellence, data management, and operational leadership to drive impactful educational and professional growth."
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy text-white font-medium hover:bg-gold hover:text-navy shadow-lg shadow-navy/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-paper-plane"></i> Get in Touch
+                </a>
+                <a href="#experience" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-navy border-2 border-slate-200 font-medium hover:border-gold hover:text-gold-dark transition-all flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-briefcase"></i> Explore Experience
+                </a>
+            </div>
+
+            <div class="pt-10 flex items-center justify-center gap-6 text-slate-500 text-xl">
+                <a href="https://www.linkedin.com/in/mfarisayyasyalghifari/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors p-2 bg-white rounded-full shadow-sm border border-slate-200">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ayyasfaris77@gmail.com" class="hover:text-gold transition-colors p-2 bg-white rounded-full shadow-sm border border-slate-200">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+6287875061590" class="hover:text-gold transition-colors p-2 bg-white rounded-full shadow-sm border border-slate-200">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-gold">About Me</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-navy">Dedicated Professional & Fresh Graduate</h3>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-navy text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 opacity-10 text-7xl font-bold">FA</div>
+                        <h4 class="text-xl font-bold text-gold mb-4">Quick Profile</h4>
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                                <span>Jakarta, Indonesia</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-graduation-cap text-gold mt-1"></i>
+                                <span>Universitas Singaperbangsa Karawang (GPA: 3.66 / 4.00)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-briefcase text-gold mt-1"></i>
+                                <span>Open to: Management Trainee, L&D, or Operations Programs</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-language text-gold mt-1"></i>
+                                <span>Languages: Fluent in Indonesian, Beginner in English</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6 text-slate-600 text-base sm:text-lg leading-relaxed">
+                    <p>
+                        Fresh graduate with a Bachelor's degree in <strong>Islamic Education Management</strong> from Universitas Singaperbangsa Karawang (Internationally Accredited), with a robust academic background in educational management, human resource management, training management, and organizational management.
+                    </p>
+                    <p>
+                        Experienced in administration, data management, documentation, and operations through internships and project-based work within the <strong>Ministry of Primary and Secondary Education</strong>. Actively involved in student organizations with demonstrated leadership and coordination capabilities as an Event Division Coordinator.
+                    </p>
+                    <p class="font-medium text-navy">
+                        Possesses strong communication, teamwork, coordination, basic analytical skills, time management, and high adaptability, driven by a strong motivation to grow in corporate and institutional environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-gold">Career & Leadership</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-navy">Work Experience & Organizations</h3>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Experience Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold/10 text-gold-dark">Sep 2025 – Dec 2025</span>
+                            <span class="text-xs font-medium text-slate-400">Ministry Government</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy mb-1">Librarian</h4>
+                        <h5 class="text-sm font-semibold text-gold-dark mb-4">Ministry of Primary and Secondary Education</h5>
+                        <p class="text-slate-600 text-sm mb-4">Supported library administrative and operational activities through comprehensive data management, documentation, and information handling.</p>
+                        
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Performed data entry and collection updates using SLIMS with physical record verification.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Conducted inventory, barcoding, classification, and systematic arrangement of collections.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Supported digital repository management, document administration, and library operations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">SLIMS</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Data Management</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Administration</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold/10 text-gold-dark">Mar 2025 – Mar 2025</span>
+                            <span class="text-xs font-medium text-slate-400">Freelance Project</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy mb-1">Data Entry & Administrative Support</h4>
+                        <h5 class="text-sm font-semibold text-gold-dark mb-4">Directorate of Early Childhood Education (PAUD)</h5>
+                        <p class="text-slate-600 text-sm mb-4">Handled massive kindergarten (TK) dataset distribution records across Indonesia under tight deadlines.</p>
+                        
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Managed TK data input regarding IFPs, DAC laptops, and Zayrex laptops via spreadsheets.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Checked data completeness, accuracy, and consistency prior to processing.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Collaborated efficiently with a team of 20+ members to meet stringent deadlines.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Spreadsheets</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Large-scale Data</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Teamwork</span>
+                    </div>
+                </div>
+
+                <!-- Organization Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-navy/10 text-navy">Mar 2025 – Dec 2025</span>
+                            <span class="text-xs font-medium text-slate-400">Student Organization</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy mb-1">Staff of the Ministry of Home Affairs</h4>
+                        <h5 class="text-sm font-semibold text-gold-dark mb-4">Student Executive Board (BEM) of Unsika</h5>
+                        <p class="text-slate-600 text-sm mb-4">Supported internal organizational administration and inter-departmental coordination.</p>
+                        
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Communicated and coordinated with diverse stakeholders to support institutional work programs.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Ensured smooth administrative execution and seamless activity coordination.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Internal Coordination</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Administration</span>
+                    </div>
+                </div>
+
+                <!-- Organization Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-navy/10 text-navy">Dec 2023 – Feb 2024</span>
+                            <span class="text-xs font-medium text-slate-400">Committee Leadership</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy mb-1">Event Division Coordinator</h4>
+                        <h5 class="text-sm font-semibold text-gold-dark mb-4">Student Election Commission (KPU Mahasiswa) of Unsika</h5>
+                        <p class="text-slate-600 text-sm mb-4">Planned and coordinated the end-to-end implementation of student electoral event series.</p>
+                        
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Managed overall event requirements, participant coordination, technical, and logistical preparations.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Collaborated with multiple parties to ensure seamless execution according to strategic plans.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Event Coordination</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Logistics</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded-md font-medium">Leadership</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-gold">Core Competencies</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-navy">My Skills & Expertise</h3>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Technical Skills -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-navy text-gold flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy">Technical Skills</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-file-excel text-green-600"></i> Microsoft Office
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-cloud text-blue-500"></i> Google Workspace
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-palette text-purple-500"></i> Canva
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-database text-gold"></i> Data Entry & Management
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-amber-600"></i> Document Management
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-headset text-indigo-600"></i> Administrative Support
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold text-white flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy">Soft Skills</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-arrows-split-up-and-left text-teal-600"></i> Adaptability
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-comments text-blue-600"></i> Communication
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-handshake text-gold-dark"></i> Collaboration & Teamwork
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-sitemap text-indigo-500"></i> Coordination
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-rose-500"></i> Time Management
+                        </span>
+                        <span class="px-4 py-2 rounded-xl bg-white text-navy font-medium text-sm border border-slate-200 shadow-sm flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-amber-500"></i> Problem Solving
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-gradient-to-br from-navy to-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-gold">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Let's Work Together</h3>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <p class="text-slate-300 text-sm sm:text-base pt-2">
+                    I am actively seeking opportunities in Management Trainee, Learning & Development, or Operations programs. Reach out via email or phone!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:ayyasfaris77@gmail.com" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold transition-all text-center group flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-4 group-hover:bg-gold group-hover:text-navy transition-all">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h4 class="text-sm font-semibold text-slate-300 mb-1">Email</h4>
+                    <span class="text-white font-medium text-sm break-all">ayyasfaris77@gmail.com</span>
+                </a>
+
+                <a href="tel:+6287875061590" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold transition-all text-center group flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-4 group-hover:bg-gold group-hover:text-navy transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h4 class="text-sm font-semibold text-slate-300 mb-1">Phone</h4>
+                    <span class="text-white font-medium text-sm">+62 878 7506 1590</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mfarisayyasyalghifari/" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold transition-all text-center group flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-4 group-hover:bg-gold group-hover:text-navy transition-all">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <h4 class="text-sm font-semibold text-slate-300 mb-1">LinkedIn</h4>
+                    <span class="text-white font-medium text-sm truncate max-w-full">mfarisayyasyalghifari</span>
+                </a>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 border-t border-white/10 text-center text-sm text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Muhammad Faris 'Ayyasy Al Ghifari. All rights reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="#hero" class="text-gold hover:underline">Back to top <i class="fa-solid fa-arrow-up ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking nav links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
